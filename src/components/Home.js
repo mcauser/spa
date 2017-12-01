@@ -23,10 +23,12 @@ export default function Home() {
         functionality deployed to overcome GitHub&nbsp;Pages incompatibility
         with single page apps (like this one).
       </p>
+
       <p style={s.p}>
         Please see the {repoReadmeLink('repo readme')} for instructions on how to
         use this boilerplate to deploy your own single page app using GitHub Pages.
       </p>
+
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -34,12 +36,21 @@ export default function Home() {
           to="/example"
         >Example page</Interactive>
       </div>
+
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
           to="/example/two-deep?field1=foo&field2=bar#boom!"
         >Example two deep with query and hash</Interactive>
+      </div>
+
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/foo/bar/zap"
+        >Example four deep</Interactive>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ s.root = {
   fontSize: '16px',
   letterSpacing: '0.025em',
   padding: '3vh 0 12vh 0',
-  width: '500px',
+  width: '800px',
   // use responsive max-width to simulate padding/margin to allow
   // space for vertical scroll bar without creating horizontal scroll bar
   // (if there is padding, the window will scroll horizontally to show the padding)
@@ -47,7 +47,7 @@ s.breadcrumbs = {
 s.creditLine = {
   color: '#A0A0A0',
   fontSize: '14px',
-  marginTop: '50px',
+  marginTop: '8px',
 };
 
 export default s;

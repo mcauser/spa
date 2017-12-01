@@ -10,23 +10,13 @@ import s from '../styles/app.style';
 export default function App() {
   return (
     <div style={s.root}>
-      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
+      <h1 style={s.title}>Demo of Single Page Apps for GitHub Pages</h1>
       <Interactive
         as="a"
         href="https://github.com/rafrex/spa-github-pages"
         style={s.repoLink}
         {...s.link}
       >https://github.com/rafrex/spa-github-pages</Interactive>
-
-      <nav style={s.breadcrumbs}>
-        <Breadcrumbs />
-      </nav>
-
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/example" component={ExampleComponent} />
-        <Route component={PageNotFound} />
-      </Switch>
 
       <div style={s.creditLine}>
         <Interactive
@@ -37,9 +27,19 @@ export default function App() {
           touchActive={{}}
           touchActiveTapOnly
         >
-          Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
+          By <span {...s.childLink}>Rafael Pedicini</span>
         </Interactive>
       </div>
+
+      <nav style={s.breadcrumbs}>
+        <Breadcrumbs />
+      </nav>
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/example" component={ExampleComponent} />
+        <Route component={PageNotFound} />
+      </Switch>
     </div>
   );
 }

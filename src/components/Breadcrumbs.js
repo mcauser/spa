@@ -8,6 +8,9 @@ const breadCrumbTitles = {
   '': 'Home',
   example: 'Example',
   'two-deep': 'Two Deep',
+  foo: 'Foo',
+  bar: 'Bar',
+  zap: 'Zap'
 };
 
 function BreadcrumbsItem({ match }) {

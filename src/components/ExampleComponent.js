@@ -17,6 +17,21 @@ export default function ExampleComponent() {
   return (
     <Switch>
       <Route
+        exact path="/example/foo/bar/zap"
+        render={({ location }) => (
+          <div>
+            <h1>Example four</h1>
+            <blockquote>
+              <ul>
+                <li>Foo</li>
+                <li>Bar</li>
+                <li>Zap</li>
+              </ul>
+            </blockquote>
+          </div>
+        )}
+      />
+      <Route
         exact path="/example/two-deep"
         render={({ location }) => (
           <div>
